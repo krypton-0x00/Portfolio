@@ -4,31 +4,35 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-color: rgb(49, 45, 45);
+  background-color: #111827;
 }
 @layer components {
   .navContainer {
-    @apply font-ubuntu bg-transparent fixed flex transition-all    text-black backdrop-blur-3xl backdrop-filter w-full h-16  justify-between px-3 py-3 items-center shadow-xl;
+    @apply font-ubuntu bg-transparent fixed flex transition-all    text-white backdrop-blur-3xl backdrop-filter w-full h-16  justify-between px-3 py-3 items-center shadow-xl;
   }
   .name {
-    @apply text-lg font-poetsen text-red-600;
+    @apply bg-gradient-to-r cursor-pointer from-green-300 via-blue-500 to-purple-600 font-bold bg-clip-text text-xl  text-transparent  font-poetsen;
   }
   .button {
-    @apply bg-red-600 text-white text-xl px-3 py-1 rounded-md hover:bg-red-500;
-
-    @apply bg-red-600 text-white text-xl px-3 py-1 rounded-md;
+    @apply block   rounded border border-blue-600 bg-blue-600 px-10 py-3 mr-4 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75;
   }
   .navigations {
-    @apply hidden text-red-600 md:flex md:gap-4 md:text-lg md:font-semibold;
+    @apply hidden text-blue-600 md:flex md:gap-4 md:text-lg md:font-semibold;
   }
   .li {
-    @apply cursor-pointer hover:text-white transition-all;
+    @apply cursor-pointer text-white hover:text-blue-600 transition-all;
   }
   .li-phone {
-    @apply hover:bg-red-500 cursor-pointer w-full h-full px-3 py-1 hover:rounded-lg;
+    @apply hover:bg-blue-500 cursor-pointer w-full h-full px-3 py-1 hover:rounded-lg;
   }
   .hamburger-items {
-    @apply md:hidden fixed top-20 flex flex-col text-xl bg-red-600 rounded-lg  text-white  font-ubuntu   transition-all backdrop-blur-3xl backdrop-filter w-[30vw]     justify-between   shadow-xl;
+    @apply md:hidden fixed top-20 flex flex-col text-xl bg-blue-600 rounded-lg  text-white  font-ubuntu   transition-all backdrop-blur-3xl backdrop-filter w-[30vw]     justify-between   shadow-xl;
+  }
+  .sm-button {
+    @apply block  rounded border border-blue-600 hover:text-blue-600 bg-blue-600 h-12 px-6 py-4 text-sm font-medium  hover:bg-transparent text-white focus:outline-none focus:ring active:text-opacity-75;
+  }
+  .transparent-button {
+    @apply block  rounded border border-blue-600 h-12 px-6 py-4 text-sm font-medium hover:text-white text-blue-600 hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto;
   }
 }
 

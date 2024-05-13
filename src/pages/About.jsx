@@ -6,13 +6,16 @@ const About = () => {
       <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
-            Understand User Flow.
-            <span className="sm:block"> Increase Conversion. </span>
+            Get To Know Me
+            <span className="sm:block"> 👇</span>
           </h1>
 
           <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-            illo tenetur fuga ducimus numquam ea!
+            Welcome to my corner of the internet! I'm a passionate full-stack
+            developer with a love for crafting elegant solutions to complex
+            problems. I've honed my skills across a wide range of technologies
+            and platforms, allowing me to tackle projects of all shapes and
+            sizes with confidence.
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -20,14 +23,14 @@ const About = () => {
               className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
               href="#"
             >
-              Get Started
+              Reviews
             </a>
 
             <a
               className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
               href="#"
             >
-              Learn More
+              My Work
             </a>
           </div>
         </div>

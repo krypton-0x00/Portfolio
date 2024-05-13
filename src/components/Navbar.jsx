@@ -8,34 +8,34 @@ function Navbar() {
     <>
       <div className="navContainer">
         <div
-          className={`text-3xl md:hidden cursor-pointer hover:text-white transition-all ${hamburgerColor}`}
+          className={`text-3xl md:hidden cursor-pointer hover:text-white text-blue-600 transition-all ${hamburgerColor}`}
           onClick={() => setHamburgerEnable((prev) => !prev)}
         >
           <RxHamburgerMenu />
         </div>
-        <p className="name">{name}</p>
+        <h1 className="name">{name}</h1>
         <ul className="navigations">
           <li className="li">
-            <a href="">Home</a>
+            <a href="/home">Home</a>
           </li>
           <li className="li">
-            <a href="">About</a>
+            <a href="/about">About</a>
           </li>
           <li className="li">
-            <a href="">Projects</a>
+            <a href="/projects">Projects</a>
           </li>
         </ul>
         {hamburgerEnable ? (
           <div className="hamburger-items">
             <ul className="">
               <li className="li-phone">
-                <a href="">Home</a>
+                <a href="/home">Home</a>
               </li>
               <li className="li-phone">
-                <a href="">About</a>
+                <a href="/about">About</a>
               </li>
               <li className="li-phone">
-                <a href="">Projects</a>
+                <a href="/projects">Projects</a>
               </li>
             </ul>
           </div>

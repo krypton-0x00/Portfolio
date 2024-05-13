@@ -1,4 +1,4 @@
 import icon from "./icon.png";
-import dummyimg from "./dummy.png";
+import projectImg from "./projectimg.jpg";
 
-export { icon, dummyimg };
+export { icon, projectImg };
