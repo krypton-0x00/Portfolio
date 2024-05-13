@@ -1,14 +1,16 @@
 import { useState } from "react";
 import { name, hamburgerColor } from "../config/config.js";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { FaRegUserCircle } from "react-icons/fa";
 
 function Navbar() {
   const [hamburgerEnable, setHamburgerEnable] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
   return (
     <>
       <div className="navContainer">
         <div
-          className={`text-3xl md:hidden cursor-pointer hover:text-white text-blue-600 transition-all ${hamburgerColor}`}
+          className={` text-3xl md:hidden cursor-pointer hover:text-white  transition-all ${hamburgerColor}`}
           onClick={() => setHamburgerEnable((prev) => !prev)}
         >
           <RxHamburgerMenu />
@@ -40,7 +42,13 @@ function Navbar() {
             </ul>
           </div>
         ) : null}
-        <button className="button">Login</button>
+        {isLoggedIn ? (
+          <div className=" transition-all text-white text-4xl hover:text-blue-600">
+            <FaRegUserCircle />
+          </div>
+        ) : (
+          <button className="button">Login</button>
+        )}
       </div>
     </>
   );
