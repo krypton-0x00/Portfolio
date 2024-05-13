@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(49, 45, 45);
+}
+@layer components {
+  .navContainer {
+    @apply font-ubuntu bg-transparent fixed flex transition-all    text-black backdrop-blur-3xl backdrop-filter w-full h-16  justify-between px-3 py-3 items-center shadow-xl;
+  }
+  .name {
+    @apply text-lg font-poetsen text-red-600;
+  }
+  .button {
+    @apply bg-red-600 text-white text-xl px-3 py-1 rounded-md hover:bg-red-500;
+
+    @apply bg-red-600 text-white text-xl px-3 py-1 rounded-md;
+  }
+  .navigations {
+    @apply hidden text-red-600 md:flex md:gap-4 md:text-lg md:font-semibold;
+  }
+  .li {
+    @apply cursor-pointer hover:text-white transition-all;
+  }
+  .li-phone {
+    @apply hover:bg-red-500 cursor-pointer w-full h-full px-3 py-1 hover:rounded-lg;
+  }
+  .hamburger-items {
+    @apply md:hidden fixed top-20 flex flex-col text-xl bg-red-600 rounded-lg  text-white  font-ubuntu   transition-all backdrop-blur-3xl backdrop-filter w-[30vw]     justify-between   shadow-xl;
+  }
+}
+
+@tailwind utilities;
