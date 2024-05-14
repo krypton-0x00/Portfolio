@@ -5,6 +5,7 @@ import About from "./pages/About";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Error from "./pages/Error";
 import Projects from "./pages/Projects";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 }

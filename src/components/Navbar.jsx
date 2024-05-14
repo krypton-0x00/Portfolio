@@ -10,12 +10,12 @@ function Navbar() {
     <>
       <div className="navContainer">
         <div
-          className={` text-3xl md:hidden cursor-pointer hover:text-white  transition-all ${hamburgerColor}`}
+          className={`hamburger-icon ${hamburgerColor}`}
           onClick={() => setHamburgerEnable((prev) => !prev)}
         >
           <RxHamburgerMenu />
         </div>
-        <h1 className="name">{name}</h1>
+        <h1 className="name animate-pulse">{name}</h1>
         <ul className="navigations">
           <li className="li">
             <a href="/home">Home</a>

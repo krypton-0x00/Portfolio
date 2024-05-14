@@ -1,5 +1,14 @@
+import HomeMain from "../components/HomeMain";
+import ReviewContainer from "../components/Reviews/ReviewContainer";
+
 const Home = () => {
-  return <></>;
+  return (
+    <>
+      <HomeMain />
+
+      <ReviewContainer />
+    </>
+  );
 };
 
 export default Home;

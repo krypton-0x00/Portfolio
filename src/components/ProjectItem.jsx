@@ -4,7 +4,7 @@ import { projectImg } from "/src/assets/assets.js";
 const ProjectItem = () => {
   return (
     <div className="flex md:flex-wrap ">
-      <div className="bg-white  w-[80vw] md:w-[400px] rounded-lg ">
+      <div className=" bg-transparent border text-white border-blue-600  w-[80vw] md:w-[400px] rounded-lg ">
         <div className="flex flex-col  ">
           <img
             className=" rounded-t-lg flex-wrap md:w-150"

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Jaro:opsz@6..72&display=swap");
 @tailwind base;
 @tailwind components;
 
@@ -11,7 +13,7 @@ body {
     @apply font-ubuntu bg-transparent fixed flex transition-all    text-white backdrop-blur-3xl backdrop-filter w-full h-16  justify-between px-3 py-3 items-center shadow-xl;
   }
   .name {
-    @apply bg-gradient-to-r cursor-pointer from-green-300 via-blue-500 to-purple-600 font-bold bg-clip-text text-xl  text-transparent  font-poetsen;
+    @apply bg-gradient-to-r cursor-pointer from-green-300 via-blue-500 to-purple-600 font-bold bg-clip-text md:text-2xl  text-transparent  font-jaro;
   }
   .button {
     @apply block   rounded border border-blue-600 bg-blue-600 px-10 py-3 mr-4 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75;
@@ -33,6 +35,9 @@ body {
   }
   .transparent-button {
     @apply block  rounded border border-blue-600 h-12 px-6 py-4 text-sm font-medium hover:text-white text-blue-600 hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto;
+  }
+  .hamburger-icon {
+    @apply text-3xl md:hidden cursor-pointer hover:text-white  transition-all;
   }
 }
 

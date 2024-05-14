@@ -7,6 +7,8 @@ export default {
         //custom fonts
         poetsen: ["Poetsen One", "sans-serif"],
         ubuntu: ["Ubuntu Sans ", "sans-serif"],
+        jaro: ["Jaro", "sans-serif"],
+        archivo: ["Archivo Black", "sans-serif"],
       },
     },
   },
